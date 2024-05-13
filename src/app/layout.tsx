@@ -1,4 +1,6 @@
 import { Header } from "@/components";
+import RightSidebar from "@/components/RightSidebar";
+import Sidebar from "@/components/Sidebar";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -23,12 +25,14 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "dark min-h-screen bg-background font-sans antialiased",
+          "dark bg-background font-sans antialiased",
           fontSans.variable,
         )}
       >
         <Header />
-        {children}
+        <Sidebar />
+        <RightSidebar />
+        <div className="ml-[16rem] mt-20 p-6">{children}</div>
       </body>
     </html>
   );
