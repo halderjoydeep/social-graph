@@ -1,6 +1,4 @@
-import { Header } from "@/components";
-import RightSidebar from "@/components/RightSidebar";
-import Sidebar from "@/components/Sidebar";
+import { Header, RightSidebar, Sidebar } from "@/components";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -32,7 +30,7 @@ export default function RootLayout({
         <Header />
         <Sidebar />
         <RightSidebar />
-        <div className="ml-[16rem] mt-20 p-6">{children}</div>
+        <div className="mx-[16rem] mt-20 p-6">{children}</div>
       </body>
     </html>
   );

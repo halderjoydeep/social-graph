@@ -28,10 +28,10 @@
 
   .dark {
     /* --background: #0c062a; */
-    --background: #262736;
+    --background: 236 17% 18%;
     --background-hover: #35374c;
     --foreground: #f9fafb;
-    --card: #171524;
+    --card: 248 26% 11%;
     --card-foreground: #f9fafb;
     --popover: #030712;
     --popover-foreground: #f9fafb;
@@ -44,7 +44,7 @@
     --muted-foreground: #9ca3af;
     --accent: #1f2937;
     --accent-foreground: #f9fafb;
-    --destructive: #7f1d1d;
+    --destructive: #c32020;
     --destructive-foreground: #f9fafb;
     --border: #1f2937;
     --input: #1f2937;
@@ -59,4 +59,21 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #171523; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Thumb color */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover */
 }

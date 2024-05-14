@@ -26,7 +26,7 @@ const config = {
         border: "var(--border)",
         input: "var(--input)",
         ring: "var(--ring)",
-        background: "var(--background)",
+        background: "hsl(var(--background))",
         "background-hover": "var(--background-hover)",
         foreground: "var(--foreground)",
         primary: {
@@ -55,7 +55,7 @@ const config = {
           foreground: "var(--popover-foreground)",
         },
         card: {
-          DEFAULT: "var(--card)",
+          DEFAULT: "hsl(var(--card))",
           foreground: "var(--card-foreground)",
         },
       },

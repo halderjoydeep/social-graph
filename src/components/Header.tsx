@@ -11,7 +11,7 @@ import { Input } from "./ui/input";
 
 const Header = () => {
   return (
-    <div className="fixed inset-0 flex h-20 items-center justify-between border-b bg-card px-10">
+    <div className="bg-card/90 fixed inset-0 z-10 flex h-20 items-center justify-between border-b px-10 backdrop-blur">
       <div className="text-2xl font-bold">
         Social<span className="text-primary">Graph</span>
       </div>
