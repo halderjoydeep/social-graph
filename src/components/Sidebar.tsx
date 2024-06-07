@@ -10,6 +10,7 @@ const Sidebar = () => {
             key={option.label}
             Icon={option.icon}
             label={option.label}
+            href={option.href}
           />
         ))}
       </nav>

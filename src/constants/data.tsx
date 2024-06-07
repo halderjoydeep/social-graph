@@ -2,8 +2,8 @@ import React from "react";
 
 export interface Post {
   id: number;
-  topic: string;
-  topicIcon?: string;
+  node: string;
+  nodeIcon?: string;
   updatedAt: string;
   user: {
     id: string;
@@ -17,8 +17,8 @@ export interface Post {
 export const posts: Post[] = [
   {
     id: 1,
-    topic: "React",
-    topicIcon:
+    node: "React",
+    nodeIcon:
       "https://raw.githubusercontent.com/react-icons/react-icons/master/react-icons.svg",
     updatedAt: "1h ago",
     user: {
@@ -40,8 +40,8 @@ export const posts: Post[] = [
   },
   {
     id: 2,
-    topic: "Next.js",
-    topicIcon: "https://nextjs.org/static/favicon/favicon-32x32.png",
+    node: "Next.js",
+    nodeIcon: "https://nextjs.org/static/favicon/favicon-32x32.png",
     updatedAt: "2h ago",
     user: {
       id: "nextjsfan",
@@ -62,8 +62,8 @@ export const posts: Post[] = [
 
   {
     id: 4,
-    topic: "GraphQL",
-    topicIcon:
+    node: "GraphQL",
+    nodeIcon:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/800px-GraphQL_Logo.svg.png",
     updatedAt: "4h ago",
     user: {
@@ -80,5 +80,26 @@ export const posts: Post[] = [
     ),
     vote: 134,
     comments: 9,
+  },
+];
+
+export const nodes = [
+  {
+    id: 1,
+    name: "React",
+    icon: "https://raw.githubusercontent.com/react-icons/react-icons/master/react-icons.svg",
+    members: 123,
+  },
+  {
+    id: 2,
+    name: "Next.js",
+    icon: "https://nextjs.org/static/favicon/favicon-32x32.png",
+    members: 98,
+  },
+  {
+    id: 3,
+    name: "GraphQL",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/800px-GraphQL_Logo.svg.png",
+    members: 134,
   },
 ];

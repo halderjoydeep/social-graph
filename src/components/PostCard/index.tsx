@@ -11,8 +11,8 @@ const PostCard = ({ post }: PostCardProps) => {
   return (
     <div className="rounded-3xl bg-card p-6">
       <PostCardHeader
-        topic={post.topic}
-        topicIcon={post.topicIcon}
+        node={post.node}
+        nodeIcon={post.nodeIcon}
         userId={post.user.id}
         updatedAt={post.updatedAt}
       />
